@@ -1,0 +1,209 @@
+/* todos estilos que estao no arquivo assess.php */
+.card-header {
+  margin-top: 0;
+  background-color: #F8B739;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #F8B739;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* estilos do arquivo instructor_aluno.php */
+/* ######################################################################################################### */
+  #c-loader1 {
+    animation: is-rotating 0.7s infinite;
+    border: 4px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 30px;
+    width: 30px;
+    display: none;
+    margin-top: 10px;
+  }
+  #c-loader2 {
+    animation: is-rotating 0.7s infinite;
+    border: 4px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 30px;
+    width: 30px;
+    display: none;
+    margin-top: 10px;
+  }
+  #c-loader {
+    animation: is-rotating 0.7s infinite;
+    border: 4px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 30px;
+    width: 30px;
+    display: none;
+    margin-top: 10px;
+  }
+  #c-loader-update {
+    animation: is-rotating 0.7s infinite;
+    border: 4px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 30px;
+    width: 30px;
+    display: none;
+    margin-top: 10px;
+  }
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+/* ######################################################################################################### */
+  /* estilos do arquivo menu.php */
+  body {
+    font-size: 18px;
+  }
+  
+  .badge:hover{
+    cursor: pointer;
+  }
+  a{
+    list-style: none;
+    color: #fff;
+  }
+  a:hover{
+    color: #fff;
+  }
+  form{
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  .table td{
+    padding: 0.3rem !important;
+  }
+  .dropdown-item{
+    margin-top: 10px;
+  }
+
+  /* ######################################################################################################### */
+  /* ALERTS DE SUCESSO OU ERRO */
+  .alert{
+    display: none;
+    width: 15%;
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+      z-index: 9999;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #f2f2f2 !important;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+
+  .progress-bar .progress {
+    width: 0%;
+    height: 100%;
+    background-color: #721C24;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: progressBarAnimation 5s linear forwards;
+    border-radius: 10px;
+  }
+  .progress-bar .progress-ok {
+    width: 0%;
+    height: 100%;
+    background-color: #155724;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: progressBarAnimation 5s linear forwards;
+    border-radius: 10px;
+  }
+
+  @keyframes progressBarAnimation {
+    0% { width: 100%; }
+    100% { width: 0%; }
+  }
+
+  .msg-empty{
+    text-align: center;
+  }
+  .modal-dialog,
+  .modal-content {
+    /* max-width: 80%; */
+  }
+/* table {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+}
+
+th, td {
+  text-align: left !important;
+  padding: 8px !important;
+} */
